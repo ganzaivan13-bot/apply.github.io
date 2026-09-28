@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    body {
+        font-family: Stencil;
+        background-color: lightblue;
+        margin: 0;
+    }
+
+    nav {
+        background-color: green;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: green;
+        color: black;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+    }
+
+    form {
+        width: 600px;
+        margin: 40px auto;
+        padding: 25px;
+        background-color: lightgray;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    input, select, textarea {
+        margin: 5px;
+        padding: 6px;
+    }
+
+    input[type="submit"] {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+
+
+<nav>
+    <a href="register.html">Home</a>
+    <a href="test.html">Register</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+    <title>Student Registration Form</title>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <p><b>Identity</b></p>
+
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" size="60">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" size="60">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" size="60">
+        <br><br>
+
+
+        <p><b>Gender</b></p>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <br><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <input type="radio" id="prefer" name="gender" value="Prefer not to say">
+        <label for="prefer">Prefer not to say</label>
+        <br><br>
+
+
+        <p><b>Course</b></p>
+
+        <select name="course">
+            <option value="SPE">SPE</option>
+            <option value="Gen AI">Gen AI</option>
+        </select>
+
+        <br><br>
+
+
+        <p><b>Hobbies</b></p>
+
+        <input type="checkbox" name="hobbies" value="Play station">
+        <label>Play station</label>
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Football">
+        <label>Football</label>
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Volleyball">
+        <label>Volleyball</label>
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Reading novels">
+        <label>Reading novels</label>
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Watching movies">
+        <label>Watching movies</label>
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Scrolling">
+        <label>Scrolling</label>
+        <br><br>
+
+
+        <p><b>Why did you choose the selected course?</b></p>
+
+        <p><i>Answer here:</i></p>
+
+        <textarea name="answer" rows="5" cols="60"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
